@@ -1,5 +1,9 @@
+
 body{
-    background-color: #a0aea7;   
+    background-color: #a0aea7;  
+    font-size: 25px; 
+    padding-left: 10%;
+    padding-right: 10%;
 }
 p{
     font-size: 25px;
@@ -7,6 +11,7 @@ p{
 }
 .headLine{
     font-style: italic;
+    font-size: 30px;
 }
 ul {
     list-style-type: none;
@@ -32,3 +37,8 @@ ul {
   li a:hover {
     background-color: #ad5e03;
   }
+ img {
+  
+  padding: left 10%;
+  padding-right: 10%;
+ }
