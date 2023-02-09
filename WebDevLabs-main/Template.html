@@ -14,6 +14,7 @@
         <!--Links in nav-->
 
         <nav>
+            
             <ul>
                 <li>
                     <a href = "#Home">Home</a>
@@ -30,97 +31,124 @@
             </a>
             </ul>
         </nav>
-
+<br><br>
         <!--heading1-->
-<h1 class=".headLine">
-<h1>
-    <strong>
-        
-        The Rococo Art Movement
-    </strong>
-</h1>
+            <h1 class=".headLine">
+        <h1>
+            The Rococo Art Movement
+        </h1>
 
-        <!--home image-->
-<hr>
-    <br>
-        <img src="birth-of-venus.jpeg" style="max-width:100%;height:auto;">
-
-        <!--heading2-->
-
+    <!--home image-->
+    <hr>
+<br>
+        <img src="birth-of-venus.jpeg" style="max-inline-size: 100%;">
+    <!--heading2-->
+<br>
     <h2 id="History">
-        <b>
-            The Beginnings of Rococo
-        </b>
+        The Beginnings of Rococo
     </h2>
-    <body>
-            <p>
-                    In the early years of the 1700s, there was a shift toward a new style now known as Rococo. 
+<body>
+<p>
+        In the early years of the 1700s, there was a shift toward a new style now known as Rococo. 
+</p>
+<br>
 
-                <br><br>
-
-        <!--versailles image-->
-
-    <img src="versailles.jpg" width="300" height="200">
-                <br>
+    <!--versailles image-->
+        <div class="container">
+                    <img src="versailles.jpg" alt="versailles" class="image">
+        <div class="overlay">
+        <div class="text">Palace of Versailles</div>
+        </div>
+        </div>
+<br>
                     The Palace of Versailles is a royal chateau that was once
                     the center of politcal power, located in Versailles, France (12 miles west 
                     of Paris, France). The former residence of King Louis XIV, was 
                     abandoned by the aristocracy, who once again took up residence 
                     in Paris. 
-                <br> <br>
+<br> <br>
 
-                    <strong>
+            <strong>
                     A shift away from the monarchy, toward the aristocracy characterizes the art of this 
                     period.
-                    </strong>
-                <br><br>
-
+            </strong>
+<br><br>
+    <hr>
+                    <h2 id="Architecture">Architecture</h2>
                     France was the center of the development of Rococo.
-                <br>
+<br>
 
                     In design, 
-                    <strong>the salon,</strong> 
+            <strong>the salon,
+            </strong> 
                     a room for entertaining but also impressing guests, 
                     was a major innovation. 
                 <br><br>
-            
-    
-    
-    <h3 id="Architecture">
-        La Salon de la Princesse
-    </h3>
-                <br>
+        <div class="container">
+                    <img src="rococo salon.jpeg" alt="salon" class="image">
+        <div class="overlay">
+        <div class="text">La Salon de la Princesse</div>
+        </div>
+        </div>
+<br>
+    <!--La Salon de la Princesse image-->
+                Rococo salons are characterized by their <strong>elaborate detail, 
+                intricate patterns, serpentine design work, asymmetry, and a 
+                predisposition to lighter, pastel, and gold-based color palettes.</strong>
+<br><br>
+                The most famous example was Charles-
+                Joseph Natoire and Germain Boffrand's <i>La Salon de la Princesse</i>
+                in the residence of the Prince and Princess de Soubise.
+<br>
+                Asymmetrical curves, sometimes derived from organic forms, such as 
+                seashells were elaborate and exaggerated. 
+                Minimal emphasis was placed on architecture and maximum 
+                emphasis on décor is essential to the Rococo movement.
+</p>
+<br><br>
+    <hr>
+        <h2 id="Art">
+        Jean-Honore Fragonard <br>
+        The Swing
+    <!--Famous Rococo painting-->
+        </h2>
+        <div class="container">
+<p>
+                <img src="swing.jpg" alt="swing" class="image">
+        <div class="overlay">
+        <div class="text">The Swing</div>
+        </div>
+        </div>
+        Symbolizing ideas of infidelity, desire, 
+        eroticism, love, and power, Its hedonistic 
+        subject and obsessive detail make it an icon of Rococo style.
+        <br><br>
 
-        <!--La Salon de la Princesse image-->
+<h2></h2>
+<div class="w3-content w3-section" style="max-width: 70%; max-height: 70%;">
+  <img class="mySlides" src="love-letters.jpg" style="width:70%; height: 70%;">
+  <img class="mySlides" src="princess.jpg" style="width:70%; height:70%;">
+  <img class="mySlides" src="la-toilette-de-venus.jpg" style="width:70%; height:70%;">
+</div>
 
-        <img src="rococo salon.jpeg" width="300" height="200">
-                <br>
-        Rococo salons are characterized by their <strong>elaborate detail, 
-        intricate patterns, serpentine design work, asymmetry, and a 
-        predisposition to lighter, pastel, and gold-based color palettes.</strong>
-                <br><br>
+<script>
+var myIndex = 0;
+carousel();
 
-        The most famous example was Charles-
-        Joseph Natoire and Germain Boffrand's <i>La Salon de la Princesse</i>
-        in the residence of the Prince and Princess de Soubise.
-                <br>
-        Asymmetrical curves, sometimes derived from organic forms, such as 
-        seashells were elaborate and exaggerated. 
-        Minimal emphasis was placed on architecture and maximum 
-        emphasis on décor is essential to the Rococo movement.
-                <br><br>
-            <hr>
-            <h2 id="Art">
-                <br>
-                Jean-Honore Fragonard <br>
-                The Swing
-        <!--Famous Rococo painting-->
-            </h2>
-        <img src="swing.jpg" height="300" width="225">
-        <br>
-        Fragonard symbolizes ideas of infidelity, desire, 
-        eroticism, love, and power. 
-        <br>
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display ="none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+
     </p>
 </body>       
 </html>
