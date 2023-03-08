@@ -1,0 +1,14 @@
+//typography
+$ulsize: 40px;
+$lisize: round($ulsize*.8);
+$ulfont: helvetica;
+
+//colors
+$ulcolor: #41ff6a;
+$licolor: complement($ulcolor);
+$licolordiff: invert($ulcolor);
+$bgcolorgrit: invert(grayscale($ulcolor));
+$bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
+$bgcolorborder: adjust-hue($bgcolorgr, 20);
+//screensize
+$screen: 1000px;
