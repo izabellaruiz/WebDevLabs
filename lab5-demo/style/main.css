@@ -1,0 +1,43 @@
+
+/*imports normalize*/
+@import "normalize.css";
+/*small screen*/
+@media screen and (max-width: 600px) {
+  /*grid 1 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #5e0f02;
+    padding: 10px;
+  }
+}
+/*media query other*/
+@media screen and (min-width: 600px) {
+  /*grid 2 col*/
+  .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #5e0f02;
+  padding: 10px;
+  }
+}
+/*making the image behave*/
+img{
+  width:100%;
+  display:block;
+}
+/*grid item format*/
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    text-align: right;
+    justify-content: center;
+  }
+
+/*centering header*/
+h2 {
+  text-align: center;
+
+}

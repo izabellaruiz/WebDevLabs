@@ -1,0 +1,31 @@
+/*imports normalize*/
+@import "normalize.css";
+/*base style*/
+body{
+    background-color: #fce0f7;
+}
+/*small screen*/
+@media screen and (max-width: 500px) {
+  /*grid 2 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #fdb7fd;
+    grid-gap: 5%;
+  }
+
+  .grid-item {
+    background-color: #ffcdf7;
+    border: 1px solid rgba(70, 67, 67, 0.185);
+    padding: 10px;
+    font-size:25px;
+    color:rgb(252, 229, 243);
+  }
+.wide {
+  grid-column: 1 / span 2;
+}
+.long{
+  grid-row: 2 / span 2;
+}
+}
+

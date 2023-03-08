@@ -1,0 +1,42 @@
+/*imports normalize.css*/
+@import "normalize.css";
+/*small screen*/
+@media screen and (max-width: 1300px) {
+    /*grid 1*/
+    .grid {
+      display: grid;
+      grid-template-columns:auto; 
+      background-color: #b2c29b;
+      padding: 10%;
+    }
+}
+
+/*other media query largest layout*/
+@media screen and (min-width:1300px) {
+    /*grid 3*/
+    .grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color: #86a05e;
+    padding: 150px;
+    } 
+}
+/*control over image of building with vines*/
+img {
+    width:100%;
+    display:block;
+}
+/*grid items*/
+.grid-item {
+    background-color: rgba(252, 228, 161, 0.541);
+    border: 5px solid #472302ad;
+    padding:25px;
+    font-size: 20px;
+    font-family:'Lucida Sans';
+    text-align:center;
+    justify-content:center;
+}
+/*centered header*/
+h2 {
+    text-align:center;
+}
