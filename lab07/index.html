@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--linking my main css, the title of the page, and necessary html info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab7</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/maincop.css">
   </head>
   <header>
-    <!--nav bar-->
+    <!--navigation bar, dead links-->
     <nav class="grid nav">
-        <a href="index.html"><div class="grid-item">
-            <h1>Home</h1>
-        </div></a>
-        <a href="cupcake.html"><div class="grid-item">
-            <h1>Cupcake</h1>
-        </div></a>
-        <a href = "inspiration.html"><div class= "grid-item">
-          <h1>Inspiration</h1>
-       </div></a>
+        <a href="bakery.html">
+          <div class="grid-item">
+            <h1 class="nav-heading">
+              Bakery</h1>
+        </div>
+      </a>
+        <a href="recipes.html">
+          <div class="grid-item">
+            <h1 class="nav-heading">
+              Recipes</h1>
+        </div>
+      </a>
+        <a href = "inspiration.html">
+          <div class= "grid-item">
+          <h1 class="nav-heading">
+            Inspiration</h1>
+       </div>
+      </a>
     </nav> 
-    <br><br>
   </header>
   <body>
-
+     <!--page heading-->
+     <article class="grid">
+      <div class="grid-item par">
+        <h1 class="page-heading">
+          Cupcake Decorating Party</h1>
+      </div>
+    <div class="grid-image">
+      <img src="image-assets/size1200.jpg"
+      srcset ="image-assets/size1200 1200w,
+      image-assets/size900.jpg 900w,
+      image-assets/size600.jpg 600w,
+      image-assets/size300.jpg 300w"
+      sizes=100%
+      alt="cupcake">
+    </div>
+    <div class="grid-item par">
+      <h2 class="invitation">
+        You're Invited!</h2>
+      </div>
+      <div class="grid-item par">
+      <p class="bodyPara">
+        I hope you can make it...</p>
+    </div>
   </body>
 </html>
