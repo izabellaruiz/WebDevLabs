@@ -1,14 +1,23 @@
 //typography
-$ulsize: 40px;
+$ulsize: 30px;
 $lisize: round($ulsize*.8);
-$ulfont: helvetica;
+$ulfont: Georgia;
 
 //colors
-$ulcolor: #41ff6a;
+$ulcolor: #AFB4C3;
 $licolor: complement($ulcolor);
 $licolordiff: invert($ulcolor);
 $bgcolorgrit: invert(grayscale($ulcolor));
 $bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
 $bgcolorborder: adjust-hue($bgcolorgr, 20);
+
 //screensize
 $screen: 1000px;
+
+/*my variables
+background color*/
+$headerbackground: #b9e0ff;
+/*font*/
+$primaryfont: "Open Sans", sans-serif;
+/*padding*/
+$sectionpadding:25px;

@@ -1,0 +1,66 @@
+/*the standard CSS comments will show up on the output
+.css file*/
+/*my variables
+background color*/
+/*font*/
+.list {
+  /*formats the lsit*/
+}
+.list ul {
+  font-size: 30px;
+  font-family: Georgia;
+  color: #AFB4C3;
+}
+.list ul li {
+  font-size: 24px;
+}
+.list .standard {
+  color: #c3beaf;
+}
+.list .different {
+  color: #504b3c;
+  background-color: #c3beaf;
+}
+
+.headMix {
+  background-color: #b9e0ff;
+  padding: 25px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.makeChanges {
+  background-color: #b9e0ff;
+  padding: 25px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tryThis {
+  background-color: #b9e0ff;
+  padding: 25px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*media query for grid*/
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #5b5c5f;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #5b5c5f;
+  }
+}
+/*formats the grid item*/
+.grid-item {
+  background-color: #464646;
+  border: 1px solid #5b5b5f;
+  margin: 10px;
+}/*# sourceMappingURL=main.css.map */

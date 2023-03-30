@@ -25,6 +25,14 @@
   }
 
 }
+/*my mixin with my variables*/
+@mixin lifeFormatTwo{
+  background-color: $headerbackground;
+  padding:$sectionpadding;
+  text-align: center;
+  font-family:$primaryfont;
+}
+
 //grid mixin
 @mixin grid{
   /*media query for grid*/
