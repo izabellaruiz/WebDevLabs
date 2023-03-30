@@ -1,0 +1,38 @@
+@import 'variables';
+
+@mixin mobile-grid {
+  $grid-count:26;
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    background-color:$bgcolor;
+  }
+  @for $i1 from 1 through $grid-count{
+    @if $i1 % 2 == 0{
+      .n#{$i1} {
+        grid-row: round($i1/2)/ span 1;
+        grid-column: 3;
+        background-color: $gridcolor;
+        border: $borderthicc solid $bordercolor;
+        padding: 10px;
+        font-size: ($i1+14px);
+        color:invert($colorfont);
+      }
+    }
+
+    @else {
+      .n#{$i1} {
+        grid-row: round($i1/2)/ span 1;
+        grid-column: 2;
+        background-color: $gridcolor;
+        border: $borderthicc solid $bordercolor;
+        padding: 10px;
+        font-size: ($i1+14px);
+        //color:invert(rgb((($i1+10)*2), $i1, ($i1*3)));
+        color:$colorfont;
+      }
+
+    }
+  }
+}
