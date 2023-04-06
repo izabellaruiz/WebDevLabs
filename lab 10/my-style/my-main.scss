@@ -1,0 +1,11 @@
+@import 'my-variable.scss';
+@import 'my-mixins.scss';
+
+@include mobile-grid;
+
+.n1 {
+  @include background-color($word-bg-color);
+}
+
+
+   
