@@ -10,11 +10,21 @@
   //includes the mixin for list format
   @include liformat;
 }
+.headMix{
+  @include lifeFormatTwo;
+}
+.makeChanges{
+  @include lifeFormatTwo;
+}
+.tryThis{
+  @include lifeFormatTwo;
+}
+
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/
     .grid-item {
-      background-color:$bgcolorgr;
+      background-color:$bgcolorgrit;
       border: 1px solid $bgcolorborder;
       margin:10px;
     }
