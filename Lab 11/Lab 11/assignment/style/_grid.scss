@@ -1,11 +1,11 @@
 @media screen and (max-width:800px) {
     /* grid 1 */
-.grid {
-  display: grid;
-  grid-template-columns: auto;
-  background-color: pink;
-  padding:10px;
-  grid-gap:10px;
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: pink;
+    padding:10px;
+    grid-gap:10px;
   }
 }
 /*grid 2*/
@@ -19,23 +19,21 @@
   }
 }
 @media screen and (min-width: 1001px) {
-    /*grid 3 col*/
-    .grid {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: $bgcolor + (100, 1000, 10);
-      padding: 10px;
-      grid-gap:10px;
-    }
+  /*grid 3 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $bgcolor + (100, 1000, 10);
+    padding: 10px;
+    grid-gap:10px;
   }
+}
   /*grid item format*/
-  .grid-item {
-    background-color: rgb(252, 196, 227);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-  }
-
+.grid-item {
+  background-color: rgb(252, 196, 227);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
 /*font*/
-
 p{
   font-family:'Roboto';
   font-size: 32px;
