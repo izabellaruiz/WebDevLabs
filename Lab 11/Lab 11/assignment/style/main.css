@@ -1,0 +1,13 @@
+@media screen and (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: pink;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+}
+p {
+  font-size: 25px;
+  color: gray;
+}/*# sourceMappingURL=main.css.map */
