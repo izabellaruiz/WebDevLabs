@@ -1,0 +1,45 @@
+@media screen and (max-width: 800px) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: pink;
+      padding: 10px;
+      grid-gap: 10px;
+    }
+}
+  
+@media screen and (min-width: 801px) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: lighten($bgcolor, 10%);
+      padding: 10px;
+      grid-gap: 10px;
+    }
+}
+  
+@media screen and (min-width: 1001px) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: lighten($bgcolor, 10%);
+      padding: 10px;
+      grid-gap: 10px;
+    }
+}
+  
+.grid-item {
+    background-color: rgb(252, 196, 227);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  
+p {
+    font-family: $font-family;
+    font-size: 32px;
+  }
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
